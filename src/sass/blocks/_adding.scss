@@ -1,0 +1,21 @@
+.adding {
+    margin: 0 auto;
+    padding: 32px;
+
+    background-color: rgba(255, 254, 251, 0.8);
+
+    &__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    }
+
+    &__title {
+		margin: 0;
+
+        font-size: 28px;
+        line-height: 35px;
+        font-weight: 600;
+        color: #3F3F3F;
+    }
+}
