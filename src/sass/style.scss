@@ -1,8 +1,27 @@
 @import 'blocks/adding';
+@import 'blocks/form';
+@import 'blocks/list';
 @import 'blocks/buttons';
 
 * {
     font-family: 'Source Sans pro', sans-serif;
     
     box-sizing: border-box;
+}
+
+.form__item_required-active {
+    margin-bottom: 5px;
+    
+    input {
+        border: 1px solid #ff8484;;
+    }
+}
+
+.errorMsg {
+    display: none;
+    margin-top: 4px;
+
+    font-size: 8px;
+    line-height: 10px;
+    color: #ff8484;
 }
