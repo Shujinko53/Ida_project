@@ -33,18 +33,16 @@ form.addEventListener('submit', (evt) => {
             errorMsgs[i].style.display = 'block';
 
             setTimeout(function() {
-                // Повторный вызов сабмита при включенной валидации покажет подсказки
                 formBtn.click();
+                form.setAttribute('novalidate', true);
               }, 0);
         } else {
             formItems[i].classList.remove('form__item_required-active');
             errorMsgs[i].style.display = 'none';
+            form.submit();
             formBtn.style.background = '#7BAE73';
             formBtn.style.color = '#ffffff';
-
-            form.setAttribute('novalidate', true);
-            form.submit();
         }
         
     })
-})
+});
